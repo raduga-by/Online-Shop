@@ -1,0 +1,48 @@
+2021-01-03T13:18:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 104 and at least 2 expected in C:\xampp\htdocs\raduga\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php(104): add_action('')
+#1 C:\xampp\htdocs\raduga\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\plugin.php on line 409
+
+2021-01-03T13:20:48+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 104 and at least 2 expected in C:\xampp\htdocs\raduga\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php(104): add_action('')
+#1 C:\xampp\htdocs\raduga\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\plugin.php on line 409
+
+2021-01-03T13:24:25+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 102
+
+2021-01-03T13:26:25+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 102
+
+2021-01-03T13:26:54+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 102
+
+2021-01-03T16:53:17+00:00 CRITICAL syntax error, unexpected token ">", expecting end of file in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 10
+
+2021-01-03T17:13:11+00:00 CRITICAL syntax error, unexpected token "array", expecting ")" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 110
+
+2021-01-03T17:13:13+00:00 CRITICAL syntax error, unexpected token "array", expecting ")" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 110
+
+2021-01-03T17:14:11+00:00 CRITICAL syntax error, unexpected token "array", expecting ")" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 110
+
+2021-01-03T17:24:51+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 145
+
+2021-01-03T17:26:10+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 145
+
+2021-01-03T17:28:10+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 145
+
+2021-01-03T17:28:26+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 145
+
+2021-01-03T17:32:10+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 154
+
+2021-01-03T18:33:06+00:00 CRITICAL syntax error, unexpected identifier "do_action", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\content-product.php on line 52
+
+2021-01-03T20:42:19+00:00 CRITICAL Unclosed '{' on line 14 in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 128
+

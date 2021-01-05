@@ -1,0 +1,121 @@
+@import url("generate-fonts.css");
+@import url("header.css");
+@import url("footer.css");
+@import url("bot.css");
+/*---------MAIN-----------*/
+.main {
+	padding-top: 57px;
+	width: 100%;
+	background-image:url(background4.jpg);
+	padding-bottom: 50px;
+}
+.main__container {
+	padding-top: 50px;
+	margin: 0 auto;
+	width: 1110px;
+}
+
+.sidebar__inner {
+	height: 150rem;
+	width: 20%;
+	float: left;
+	margin-right: 50px;
+	margin-top: 2rem;
+	margin-left: 25px;
+}
+
+.sidebar {
+	background-color: white;
+	border-radius: 10px;
+	text-align: start;
+	padding-left: 10px;
+	box-shadow: 5px 5px 20px 5px rgba(14,14,14,.3);
+	
+	line-height: 250%;
+	font-size: 18px;
+	
+}
+.nav-element {
+	color: rgb(129, 129, 129);
+}
+
+.nav-element:hover {
+	color: #e26464;
+	text-shadow: 1px 1px 3px #e26464;
+	transition: 0.5s;
+}
+
+.img-news img {
+	width: 700px;
+	height: 300px;
+}
+
+.title {
+	font-size: 32px;
+	text-align: center;
+	font-family: Monserat-Black;
+	text-shadow: 2px 1px 3px black;
+	cursor: default;
+	color:  #e26464;
+}
+
+.date {
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-bottom: 10px;
+	cursor: default;
+}
+
+.title-news p {
+	font-family: Monserat-Bold;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	cursor: default;
+}
+.card-news {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	display: inline-block;
+	background-color: #fff;	
+	padding: 40px;
+	box-shadow: 5px 5px 20px 5px rgba(14,14,14,.3);
+	
+	border-radius: 15px;
+	cursor: default;
+	
+}
+
+.card-news:before {
+	content: "";
+	position: absolute;
+	width: 770px;
+	height: 36.5rem;	
+	opacity: 100%;
+	margin-top: -40px;
+	left: 5px;
+	border-radius: 10px;
+	transition:all 1s ease-out;
+	box-shadow: 5px 10px 20px 5px rgb(202, 202, 202);
+	filter: blur(0px);
+	transform: skewX(200deg);
+}
+
+.card-news:hover::before {
+	width: 0px;
+	box-shadow: 5px 10px 20px 5px transparent;
+}
+
+.text-news {
+	max-width: 700px;
+	margin-top: 10px;
+	text-align: justify;
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow-y: hidden;
+	cursor: default;
+}
+
+/*---------MAIN----------- */ ;

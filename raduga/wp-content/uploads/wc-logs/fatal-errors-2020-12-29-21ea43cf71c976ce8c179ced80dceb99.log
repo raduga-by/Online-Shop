@@ -1,0 +1,44 @@
+2020-12-29T22:28:36+00:00 CRITICAL syntax error, unexpected double-quoted string ">Аксессуары</a>" in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 63
+
+2020-12-29T22:48:31+00:00 CRITICAL Uncaught Error: Call to undefined function get_product_category_by_id() in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php:21
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\raduga\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\raduga\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php(1): get_header()
+#4 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 21
+
+2020-12-29T22:49:50+00:00 CRITICAL syntax error, unexpected token ";", expecting ")" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 21
+
+2020-12-29T22:54:18+00:00 CRITICAL Cannot redeclare get_cat_name() (previously declared in C:\xampp\htdocs\raduga\wp-includes\category.php:223) in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 18
+
+2020-12-29T22:57:31+00:00 CRITICAL syntax error, unexpected integer "31", expecting identifier or variable or "{" or "$" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 19
+
+2020-12-29T22:57:46+00:00 CRITICAL syntax error, unexpected token "=", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 18
+
+2020-12-29T22:58:07+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 20
+
+2020-12-29T22:58:48+00:00 CRITICAL syntax error, unexpected token "<" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 20
+
+2020-12-29T23:01:22+00:00 CRITICAL Uncaught Error: Object of class WP_Term could not be converted to string in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php:27
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\template.php(730): require_once()
+#1 C:\xampp\htdocs\raduga\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#2 C:\xampp\htdocs\raduga\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#3 C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php(1): get_header()
+#4 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#6 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#7 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 27
+
+2020-12-29T23:03:36+00:00 CRITICAL syntax error, unexpected token "echo", expecting ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 20
+
+2020-12-29T23:04:52+00:00 CRITICAL syntax error, unexpected token "}", expecting ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 87
+
+2020-12-29T23:15:33+00:00 CRITICAL syntax error, unexpected token "echo" in C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php on line 46
+

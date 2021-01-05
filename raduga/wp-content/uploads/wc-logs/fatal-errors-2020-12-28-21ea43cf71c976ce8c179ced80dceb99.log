@@ -1,0 +1,28 @@
+2020-12-28T19:04:39+00:00 CRITICAL syntax error, unexpected double-quoted string " alt=" in C:\xampp\htdocs\raduga\wp-content\themes\theme\archive.php on line 50
+
+2020-12-28T19:04:51+00:00 CRITICAL syntax error, unexpected double-quoted string ">" in C:\xampp\htdocs\raduga\wp-content\themes\theme\archive.php on line 53
+
+2020-12-28T19:17:46+00:00 CRITICAL syntax error, unexpected token "." in C:\xampp\htdocs\raduga\wp-content\themes\theme\archive.php on line 49
+
+2020-12-28T19:18:01+00:00 CRITICAL syntax error, unexpected token "echo" in C:\xampp\htdocs\raduga\wp-content\themes\theme\archive.php on line 50
+
+2020-12-28T21:50:26+00:00 CRITICAL syntax error, unexpected identifier "WP_Query" in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 122
+
+2020-12-28T21:52:04+00:00 CRITICAL syntax error, unexpected identifier "WP_Query" in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 125
+
+2020-12-28T21:52:15+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php:131
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 131
+
+2020-12-28T21:52:36+00:00 CRITICAL Uncaught Error: Call to a member function the_post() on null in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php:131
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include()
+#1 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 131
+

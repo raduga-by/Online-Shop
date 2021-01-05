@@ -1,0 +1,37 @@
+.slyder{
+    width: 845px;
+    height: 495px;
+    background-color: blue;
+    margin-top: 119px;
+    
+    margin-left: 670px;
+}
+
+.button{
+    background-color: green;
+    width: 30px;
+    height: 30px; 
+   
+    margin-top: 220px;
+}
+
+.b1{
+    float: left;
+   margin-left: 5px;
+}
+
+.b2{
+   float: right; 
+    margin-right: 5px;
+}
+
+
+.radiodiv{
+   position: absolute;
+   margin-top: 470px;
+   margin-left: 370px;
+}
+
+.rb1{
+
+}
