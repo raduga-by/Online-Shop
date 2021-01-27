@@ -138,14 +138,14 @@
                     <div class="news__tape">
                         <?php if(has_post_thumbnail()):?>
                             <div class="news__img">
-                            <img src="<?php the_post_thumbnail_url();?>">;
+                            <img src="<?php the_post_thumbnail_url();?>" href="<?php 
+                            // the_permalink();?>">;
+                            
+                            
                                 
                             </div>
                         <?php endif;?>
                         <div class="title__news">
-                            <!-- <a href="<?php 
-                            // the_permalink();?>">
-                            </a> -->
                             <?php the_title();?>
                         </div>
                         <div class="date__added-news">

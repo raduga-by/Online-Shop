@@ -1,13 +1,5 @@
 <?php 
 
-
-// function theme_title(){
-//     add_theme_support( 'title-tag' );
-// }
-// add_action('after_setup_theme', 'theme_title');
-
-
-
 register_nav_menus( 
         array(
             'top-menu' => 'Top Menu'
@@ -160,6 +152,6 @@ add_action( 'woocommerce_before_shop_loop_item_title', function(){
 
 remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart');
 
-remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart');
+// remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart');
 
 ?>
