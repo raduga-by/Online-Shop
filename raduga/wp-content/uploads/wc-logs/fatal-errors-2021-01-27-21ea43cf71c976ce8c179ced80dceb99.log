@@ -1,0 +1,22 @@
+2021-01-27T21:41:10+00:00 CRITICAL syntax error, unexpected token "else" in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 106
+
+2021-01-27T22:35:24+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object() on null in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php:49
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 49
+
+2021-01-27T22:35:36+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object() on null in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php:49
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\templates\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 49
+

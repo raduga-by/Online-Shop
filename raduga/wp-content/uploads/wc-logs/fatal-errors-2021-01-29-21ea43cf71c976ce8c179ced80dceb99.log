@@ -1,0 +1,64 @@
+2021-01-29T12:17:20+00:00 CRITICAL syntax error, unexpected token "if" in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 50
+
+2021-01-29T12:26:54+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object() on null in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php:49
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 49
+
+2021-01-29T12:30:48+00:00 CRITICAL syntax error, unexpected token "}", expecting "," or ";" in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 51
+
+2021-01-29T12:39:19+00:00 CRITICAL Uncaught Error: Call to a member function get_queried_object() on null in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php:50
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-core-functions.php(345): include()
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\taxonomy-product-cat.php(22): wc_get_template('archive-product...')
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php on line 50
+
+2021-01-29T12:39:49+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on string in C:\xampp\htdocs\raduga\wp-includes\query.php:933
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-template-functions.php(271): have_posts()
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php(63): woocommerce_product_loop()
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\query.php on line 933
+
+2021-01-29T12:40:03+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\raduga\wp-includes\query.php:933
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-template-functions.php(271): have_posts()
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php(63): woocommerce_product_loop()
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\query.php on line 933
+
+2021-01-29T12:40:13+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\raduga\wp-includes\query.php:933
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-template-functions.php(271): have_posts()
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php(63): woocommerce_product_loop()
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\query.php on line 933
+
+2021-01-29T12:40:58+00:00 CRITICAL Uncaught Error: Call to a member function have_posts() on null in C:\xampp\htdocs\raduga\wp-includes\query.php:933
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-template-functions.php(271): have_posts()
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\woocommerce\archive-product.php(73): woocommerce_product_loop()
+#2 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\query.php on line 933
+
