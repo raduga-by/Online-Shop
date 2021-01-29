@@ -24,17 +24,15 @@
 <main class="main">
     <div class="main__container">
         <div class="block__news">
-            <div class="sidebar__inner">
-                <aside class="sidebar">
-                    <div class="nav__block">
-                        <p><a class="nav-element" href="">Новости и Акции</a></p>
-						<p><a class="nav-element" href="">Бонусы</a></p>
-						<p><a class="nav-element" href="">Архив</a></p>
-					</div>
-				</aside>
-			</div>
             <div class="title">
-                Новости и Акции
+                <?php 
+                    if(is_category( 'news' )){
+                        echo 'Новости';
+                    }
+                    elseif(is_category( 'stock' )){
+                        echo 'Акции';
+                    }
+                ?>
             </div>
             <div class="tape__news">
                 
@@ -43,10 +41,11 @@
                 <div class="card-news">
 
                     <div class="title-news">
-                        <p><?php the_title();?></p>
-                        <!-- <a href="<?php 
-                        // the_permalink();?>">
-                        </a> -->
+                        <p><?php the_title();?>
+                        </p>
+                        <a href="<?php 
+                        the_permalink();?>">
+                        </a>
                     </div>
                     <div class="date">
                         <p><?php echo get_the_date() . ' ' .

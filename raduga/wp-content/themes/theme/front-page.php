@@ -125,7 +125,7 @@
 
                 <?php 
                 $args = array(
-                    'post_type' => 'post',
+                    'category_name' => 'news',
                     'posts_per_page' => 4
                 );
                 $_posts = new WP_Query($args);
@@ -160,21 +160,49 @@
 
                 <?php endif;?>
             </div>
-            <!-- <div class="block__stocks">
-                <div id="slyder">
-                    <div id="polosa">
-                        <img class="item" src="<?php 
-                        // bloginfo('template_directory');?>/img/peyzazh-priroda-pole-polya-3946.jpg">
-                        <img class="item" src="<?php 
-                        // bloginfo('template_directory');?>/img/peyzazh-priroda-pole-polya-3946.jpg">
-                        <img class="item" src="<?php 
-                        // bloginfo('template_directory');?>/img/peyzazh-priroda-pole-polya-3946.jpg">
-                        <img class="item" src="<?php 
-                        // bloginfo('template_directory');?>/img/peyzazh-priroda-pole-polya-3946.jpg">
 
+            <div class="block__news">
+
+                <span class="block__news-title">Акции</span>
+
+                <?php 
+                $args = array(
+                    'category_name' => 'stock',
+                    'posts_per_page' => 4
+                );
+                $_posts = new WP_Query($args);
+                ?>
+
+                <?php if($_posts->have_posts()):?>
+
+
+                    <?php while ($_posts->have_posts()): $_posts->the_post();?>
+                    <div class="news__tape">
+                        <?php if(has_post_thumbnail()):?>
+                            <div class="news__img">
+                            <img src="<?php the_post_thumbnail_url();?>" href="<?php 
+                            // the_permalink();?>">;
+                            
+                            
+                                
+                            </div>
+                        <?php endif;?>
+                        <div class="title__news">
+                            <?php the_title();?>
+                        </div>
+                        <div class="date__added-news">
+                            <?php echo get_the_date();?>
+                        </div>
+                        <div class="text__news">
+                            <?php the_excerpt();?>
+                        </div>
                     </div>
-                </div>
-            </div> -->
+
+                    <?php endwhile;?>
+
+                <?php endif;?>
+            </div>
+
             <div class="block__stocks">
 					<div id="slyder">
 						<div id="polosa">

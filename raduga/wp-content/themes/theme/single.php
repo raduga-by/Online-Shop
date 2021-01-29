@@ -28,6 +28,7 @@
 						<p><a class="nav-element" href="">Новости и Акции</a></p>
 						<p><a class="nav-element" href="">Бонусы</a></p>
 						<p><a class="nav-element" href="">Архив</a></p>
+						<p><a class="nav-element" href="">Архив</a></p>
 					</div>
 				</aside>
 			</div>
