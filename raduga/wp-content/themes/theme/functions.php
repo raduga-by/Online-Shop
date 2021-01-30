@@ -5,7 +5,7 @@ register_nav_menus(
             'top-menu' => 'Top Menu'
         )
     );
-
+ 
 function register_styles(){
     $version = wp_get_theme() -> get('Version');
     
@@ -84,6 +84,13 @@ function register_styles(){
         wp_enqueue_style('bonuce', get_template_directory_uri() . '/css/bonuce.css',
         array(), '1', 'all');
     }
+    elseif(is_single()){
+        wp_enqueue_style('style_news', get_template_directory_uri() . '/css/style_news.css',
+        array(), $version, 'all');
+
+        wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css',
+        array(), '4.5.0', 'all');
+    }
 }
 add_action('wp_enqueue_scripts', 'register_styles');
 
@@ -128,8 +135,18 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 
 function open_main(){
     echo '<main class="main">
-    <div class="main__container">
-    <div class="main__catalog">';
+    <div class="main__container">';
+    if(is_shop()){
+        echo '<div class="main__catalog">';
+        ?>
+            <aside class="sidebar">
+                <?php
+                    $cate = get_queried_object_id();
+                    echo do_shortcode( '[woof taxonomies=product_cat:".$cate."]' );
+                ?>
+            </aside>
+        <?php
+    }
 }
 
 add_action('woocommerce_before_main_content', 'open_main', 5);
@@ -154,4 +171,25 @@ remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_ad
 remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30 );
 remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 );
 remove_action( 'woocommerce_after_shop_loop' , 'woocommerce_result_count', 20 );
+
+function woocommerce_output_content_wrapper() {
+    if(is_shop()){
+        echo '<div class="main__content">
+                <div class="items">';
+    }
+}
+add_action('woocommerce_before_main_content', 'woocommerce_output_content_wrapper');
+
+
+function woocommerce_output_content_wrapper_end() {
+    if(is_shop()){
+        echo '</div><
+                </div>';
+    }
+}
+add_action('woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end');
+
+
+add_filter( 'woocommerce_is_purchasable', '__return_false' );
+remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_related_products', 20 );
 ?>

@@ -121,8 +121,6 @@
         <div class="blocks__news-container">
             <div class="block__news">
 
-                <span class="block__news-title">Новости</span>
-
                 <?php 
                 $args = array(
                     'category_name' => 'news',
@@ -130,6 +128,8 @@
                 );
                 $_posts = new WP_Query($args);
                 ?>
+                <span class="block__news-title">Новости</span>
+
 
                 <?php if($_posts->have_posts()):?>
 
@@ -138,15 +138,13 @@
                     <div class="news__tape">
                         <?php if(has_post_thumbnail()):?>
                             <div class="news__img">
-                            <img src="<?php the_post_thumbnail_url();?>" href="<?php 
-                            // the_permalink();?>">;
-                            
-                            
-                                
+                                <a href="<?php the_permalink();?>">
+                                    <img src="<?php the_post_thumbnail_url();?>">;
+                                </a>
                             </div>
                         <?php endif;?>
                         <div class="title__news">
-                            <?php the_title();?>
+                            <a href="<?php the_permalink();?>"><?php the_title();?></a>
                         </div>
                         <div class="date__added-news">
                             <?php echo get_the_date();?>
@@ -180,15 +178,13 @@
                     <div class="news__tape">
                         <?php if(has_post_thumbnail()):?>
                             <div class="news__img">
-                            <img src="<?php the_post_thumbnail_url();?>" href="<?php 
-                            // the_permalink();?>">;
-                            
-                            
-                                
+                                <a href="<?php the_permalink();?>">
+                                    <img src="<?php the_post_thumbnail_url();?>">;
+                                </a>
                             </div>
                         <?php endif;?>
                         <div class="title__news">
-                            <?php the_title();?>
+                            <a href="<?php the_permalink();?>"><?php the_title();?></a>
                         </div>
                         <div class="date__added-news">
                             <?php echo get_the_date();?>
@@ -204,31 +200,28 @@
             </div>
 
             <div class="block__stocks">
-					<div id="slyder">
-						<div id="polosa">
-							<div class="info__img">
-								<img class="item" style="background-image: url(https://dtraduga.by/modules/mod_raxo_allmode/tools/tb.php?src=%2Fimages%2F%D0%94%D0%A0.jpg&w=300);">
-								<a href="../raduga.by/news_page.html"><button>Подробнее</button></a>
-							</div>
-							<div class="info__img">
-								<img class="item" style="background-image: url(https://dtraduga.by/modules/mod_raxo_allmode/tools/tb.php?src=%2Fimages%2F%D0%A1%D0%B5%D1%80%D1%82%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%82%D1%8B.jpg&w=300);">
-								<a href="../raduga.by/news_page.html"><button>Подробнее</button></a>
-							</div>
-							<div class="info__img">
-								<img class="item" style="background-image: url(https://www.dtraduga.by/modules/mod_raxo_allmode/tools/tb.php?src=%2Fimages%2F%D0%94%D0%B8%D1%81%D0%BA%D0%BE%D0%BD%D1%82%D0%BD%D1%8B%D0%B5_%D0%BA%D0%B0%D1%80%D1%82%D1%8B.jpg&w=300);">
-								<a href="../raduga.by/news_page.html"><button>Подробнее</button></a>
-							</div>
-							<div class="info__img">
-								<img class="item" style="background-image: url(https://dtraduga.by/modules/mod_raxo_allmode/tools/tb.php?src=%2Fimages%2Fnews%2F%D0%95%D0%A0%D0%98%D0%9F_300.jpg&w=300);">
-								<a href="../raduga.by/news_page.html"><button>Подробнее</button></a>
-							</div>
-							<div class="info__img">
-								<img class="item" style="background-image: url(https://www.dtraduga.by/modules/mod_raxo_allmode/tools/tb.php?src=%2Fimages%2F%D0%9A%D0%B0%D1%80%D1%82%D1%8B_%D1%80%D0%B0%D1%81%D1%81%D1%80%D0%BE%D1%87%D0%B5%D0%BA.jpg&w=300)">
-								<a href="../raduga.by/news_page.html"><button>Подробнее</button></a>
-							</div>
-						</div>
-					</div>
-        </div>
+                <div id="slyder">
+                    <?php 
+                        $args = array(
+                            'category_name' => 'bonus',
+                            'posts_per_page' => 4
+                        );
+                        $_posts = new WP_Query($args);
+                    ?>
+                    <?php if($_posts->have_posts()):?>
+                        <div id="polosa">
+                        <?php while ($_posts->have_posts()): $_posts->the_post();?>
+                            <?php if(has_post_thumbnail()):?>
+                            <div class="info__img">
+                                <img class="item" style="background-image: url(<?php the_post_thumbnail_url();?>);">
+                                <a href="<?php the_permalink();?>"><button>Подробнее</button></a>
+                            </div>
+                            <?php endif;?>
+                        <?php endwhile;?>
+                        </div>
+                    <?php endif;?>
+                </div>
+            </div>
     </div>
 </main>
 

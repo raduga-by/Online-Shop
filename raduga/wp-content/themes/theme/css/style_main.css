@@ -174,11 +174,10 @@ input:focus {
 	margin-bottom: 20px;
 }
 
-.title__news {
+.title__news a{
 	font-family: Monserat-Bold;
 	display: inline;
 	line-height: 150%;
-	cursor: default;
 }
 
 .date__added-news {

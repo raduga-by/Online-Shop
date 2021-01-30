@@ -413,32 +413,6 @@ input {
 	transition: all 0.5s;
 }
 
-.page {
-	margin-top: 20px;
-	text-align: center;
-}
-
-.num-page {
-	display: inline-block;
-	border: 2px solid red;
-	background-color: white;
-	width: 30px;
-	height: 35px;
-	text-align: center;
-	padding: 0.4rem;
-	border-radius: 5px;
-	transition: all 0.5s;
-}
-.num-page:hover {
-	background-color: red;
-	color: white;
-	box-shadow: 5px 0px 10px 2px rgb(155, 155, 155);
-	transition: all 0.5s;
-}
-.number {
-	font-family: Monserat-Medium;
-}
-
 hr {
 	height: 40px;
 	width: 1px;
@@ -475,6 +449,76 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
     border-radius: 10px;
     box-shadow:0px 0px 10px 5px rgba(14,14,14,0.3);
     padding: 10px;
+}
+
+
+.woocommerce nav.woocommerce-pagination ul {
+    display: inline-block;
+    white-space: nowrap;
+	padding: 0;
+	border: 0px;
+    clear: both;
+	margin: 1px;
+}
+.woocommerce nav.woocommerce-pagination ul li{
+	border: 1px solid white;
+}
+.woocommerce nav.woocommerce-pagination ul li span.current {
+    background: rgb(170, 101, 182);
+	color: white;
+	font-size: 12pt;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:hover{
+	background: rgb(170, 101, 182);
+	color: white;
+	font-size: 12pt;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a:focus{
+	background: rgb(170, 101, 182);
+	color: white;
+	font-size: 12pt;
+}
+
+.page-numbers{
+	font-size: 12pt;
+}
+
+.woocommerce-product-details__short-description{
+    display: none;
+}
+.product_title{
+    color: #fff;
+    font-size:28px;
+    margin-bottom: 20px;
+}
+
+.posted_in{
+    margin-top: 20px;
+    color: #fff;
+    font-size:18px;
+}
+
+.woocommerce-Price-amount {
+    color: #ca2850;
+	font-size:18px;
+}
+
+.woocommerce-Price-currencySymbol{
+    color:#fff;
+    padding-right: 10px;
+    font-size:18px;
+}
+
+.woocommerce-Tabs-panel{
+    color: #fff;
+}
+
+.woocommerce-Tabs-panel h2{
+    color: #fff;
+    margin-bottom: 10px;
+    font-size:18px;
 }
 /*---------MAIN-----------*/
 

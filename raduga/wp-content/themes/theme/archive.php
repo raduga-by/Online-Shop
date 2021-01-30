@@ -32,6 +32,9 @@
                     elseif(is_category( 'stock' )){
                         echo 'Акции';
                     }
+                    elseif(is_category( 'bonus' )){
+                        echo 'Бонус';
+                    }
                 ?>
             </div>
             <div class="tape__news">
@@ -41,10 +44,8 @@
                 <div class="card-news">
 
                     <div class="title-news">
-                        <p><?php the_title();?>
-                        </p>
-                        <a href="<?php 
-                        the_permalink();?>">
+                        <a href="<?php the_permalink();?>">
+                            <?php the_title();?>
                         </a>
                     </div>
                     <div class="date">
@@ -53,7 +54,9 @@
                     </div>
 
                     <div class="img-news">
-                        <img src="<?php the_post_thumbnail_url('news_image');?>">
+                        <a href="<?php the_permalink();?>">
+                            <img src="<?php the_post_thumbnail_url('news_image');?>">
+                        </a>
                     </div>
 
                     <div class="text-news">

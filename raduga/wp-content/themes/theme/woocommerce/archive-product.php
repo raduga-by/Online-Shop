@@ -26,7 +26,9 @@ get_header( 'shop' );
  * @hooked woocommerce_breadcrumb - 20
  * @hooked WC_Structured_Data::generate_website_data() - 30
  */
+
 do_action( 'woocommerce_before_main_content' );
+do_action( 'woocommerce_output_content_wrapper', 10 );
 
 ?>
 
@@ -73,12 +75,12 @@ if ( woocommerce_product_loop() ) {
 	 */
 	do_action( 'woocommerce_no_products_found' );
 }
-
 /**
  * Hook: woocommerce_after_main_content.
  *
  * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
  */
+do_action( 'woocommerce_output_content_wrapper_end', 10 );
 do_action( 'woocommerce_after_main_content' );
 ?>
 <!-- <h1>
@@ -88,6 +90,7 @@ do_action( 'woocommerce_after_main_content' );
 </h1> -->
 
 <?php
+
 /**
  * Hook: woocommerce_sidebar.
  *

@@ -1,0 +1,46 @@
+2021-01-30T16:52:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 174 and at least 2 expected in C:\xampp\htdocs\raduga\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php(174): add_action('action_function...')
+#1 C:\xampp\htdocs\raduga\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\plugin.php on line 409
+
+2021-01-30T16:54:28+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 182 and at least 2 expected in C:\xampp\htdocs\raduga\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php(182): add_action('action_function...')
+#1 C:\xampp\htdocs\raduga\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\wp-admin\admin-ajax.php(22): require_once('C:\\xampp\\htdocs...')
+#5 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\plugin.php on line 409
+
+2021-01-30T16:54:29+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 182 and at least 2 expected in C:\xampp\htdocs\raduga\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php(182): add_action('action_function...')
+#1 C:\xampp\htdocs\raduga\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\plugin.php on line 409
+
+2021-01-30T16:55:47+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function add_action(), 1 passed in C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php on line 174 and at least 2 expected in C:\xampp\htdocs\raduga\wp-includes\plugin.php:409
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-content\themes\theme\functions.php(174): add_action('action_function...')
+#1 C:\xampp\htdocs\raduga\wp-settings.php(525): include('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#4 C:\xampp\htdocs\raduga\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#5 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#6 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\plugin.php on line 409
+
+2021-01-30T19:29:15+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 240
+
+2021-01-30T19:33:11+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 226
+
