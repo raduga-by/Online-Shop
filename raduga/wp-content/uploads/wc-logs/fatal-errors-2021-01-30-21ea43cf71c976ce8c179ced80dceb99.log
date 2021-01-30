@@ -44,3 +44,31 @@ Stack trace:
 
 2021-01-30T19:33:11+00:00 CRITICAL syntax error, unexpected end of file in C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php on line 226
 
+2021-01-30T22:57:52+00:00 CRITICAL Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in C:\xampp\htdocs\raduga\wp-includes\formatting.php:4314
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\formatting.php(4314): ltrim(Array)
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php(143): esc_url(Array)
+#2 C:\xampp\htdocs\raduga\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#4 C:\xampp\htdocs\raduga\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php(1): get_header()
+#6 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\formatting.php on line 4314
+
+2021-01-30T22:58:07+00:00 CRITICAL Uncaught TypeError: ltrim(): Argument #1 ($string) must be of type string, array given in C:\xampp\htdocs\raduga\wp-includes\formatting.php:4314
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\formatting.php(4314): ltrim(Array)
+#1 C:\xampp\htdocs\raduga\wp-content\themes\theme\header.php(143): esc_url(Array)
+#2 C:\xampp\htdocs\raduga\wp-includes\template.php(730): require_once('C:\\xampp\\htdocs...')
+#3 C:\xampp\htdocs\raduga\wp-includes\template.php(676): load_template('C:\\xampp\\htdocs...', true, Array)
+#4 C:\xampp\htdocs\raduga\wp-includes\general-template.php(48): locate_template(Array, true, true, Array)
+#5 C:\xampp\htdocs\raduga\wp-content\themes\theme\front-page.php(1): get_header()
+#6 C:\xampp\htdocs\raduga\wp-includes\template-loader.php(106): include('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\raduga\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#8 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#9 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\formatting.php on line 4314
+

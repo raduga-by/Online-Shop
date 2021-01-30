@@ -29,16 +29,24 @@
             <div class="slider__wrapper">
                 <div class="slider__items">
                     <div class="slider__item">
-                        <div style="height: 495px; background-image: url(https://www.dtraduga.by/images/slider/CardHalva.jpg);"></div>
+                    <?php if( get_field('image_1') ): ?>
+                        <div style="height: 495px; background-image: url(<?php the_field('image_1'); ?>);"></div>
+                    <?php endif; ?>             
                     </div>
                     <div class="slider__item">
-                        <div style="height: 495px; background-image: url(https://www.dtraduga.by/images/slider/FUN.jpg);"></div>
+                    <?php if( get_field('image_2') ): ?>
+                        <div style="height: 495px; background-image: url(<?php the_field('image_2'); ?>);"></div>
+                    <?php endif; ?>             
                     </div>
                     <div class="slider__item">
-                        <div style="height: 495px; background-image: url(https://www.dtraduga.by/images/slider/kartabelgazprom.jpg);"></div>
+                    <?php if( get_field('image_3') ): ?>
+                        <div style="height: 495px; background-image: url(<?php the_field('image_3'); ?>);"></div>
+                    <?php endif; ?>             
                     </div>
                     <div class="slider__item">
-                        <div style="height: 495px; background-image: url(https://www.dtraduga.by/images/slider/%D0%94%D0%A0.jpg);"></div>
+                    <?php if( get_field('image_4') ): ?>
+                        <div style="height: 495px; background-image: url(<?php the_field('image_4'); ?>);"></div>
+                    <?php endif; ?>             
                     </div>
                 </div>
             </div>
@@ -177,7 +185,7 @@
                     <?php while ($_posts->have_posts()): $_posts->the_post();?>
                     <div class="news__tape">
                         <?php if(has_post_thumbnail()):?>
-                            <div class="news__img">
+                            <div class="shares__img">
                                 <a href="<?php the_permalink();?>">
                                     <img src="<?php the_post_thumbnail_url();?>">;
                                 </a>

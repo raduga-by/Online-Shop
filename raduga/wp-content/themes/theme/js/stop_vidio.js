@@ -1,37 +1,19 @@
-var card = document.querySelector('.card');
-var video = document.querySelector('.video__card');
-var open = false;
+const vidio = document.getElementById('player');
+const bl = document.querySelector('.video__card');
+const bl3 = document.querySelector('.card');
 
 
-   var player;
-      function onYouTubeIframeAPIReady() {
-        player =  YT.Player('video__card', {
-          events: {
-            'onReady': onPlayerReady,
-            'onStateChange': onPlayerStateChange
-          }
-        });
-      }
-
-      function onPlayerReady(event) {
-        event.target.playVideo();
-      }
-
-      var done = false;
-      function onPlayerStateChange(event) {
-        if (event.data == YT.PlayerState.PLAYING && !done) {
-          setTimeout(stopVideo, 6000);
-          done = true;
-        }
-      }
-      function stopVideo() {
-        player.stopVideo();
-      }
+bl.onmouseover = function (){start()};
+bl.onmouseout = function (){stop()};
 
 
-card.onmouseover = function(){
-	onPlayerReady();
+function stop(){
+  vidio.src = "";
+  vidio.style.display = "none";
 }
-card.onmouseout = function(){	
-	stopVideo();
+
+function start(){
+  vidio.src = "https://www.youtube.com/embed/xCTne5YV8SA?ecver=1";
+  vidio.style.display = "block";
 }
+

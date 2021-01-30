@@ -29,9 +29,6 @@ function register_styles(){
         wp_enqueue_style('style_about', get_template_directory_uri() . '/css/style_about-us.css',
         array(), $version, 'all');
         
-        wp_enqueue_style('scroll', get_template_directory_uri() . '/css/scroll.css',
-        array(), '1', 'all');
-        
         wp_enqueue_style('snow', get_template_directory_uri() . '/css/snow.css',
         array(), '1', 'all');
     }
@@ -102,6 +99,9 @@ function register_scripts(){
         wp_enqueue_script('button', get_template_directory_uri() . '/js/visablebutton.js', array(), 1, true);
         wp_enqueue_script('bonus', get_template_directory_uri() . '/js/bonus.js', array(), 1, true);
     }
+    elseif(is_page('about-us')){
+        wp_enqueue_script('stop_vidio', get_template_directory_uri() . '/js/stop_vidio.js', array(), 1, true);
+    }
     wp_enqueue_script('preloader', get_template_directory_uri() . '/js/PL.js', array(), 1, true);
 
     wp_enqueue_script('sl', get_template_directory_uri() . '/js/sl.js', array(), 1, true);
@@ -119,7 +119,6 @@ add_theme_support( 'menus' );
 add_image_size( 'news_image', 1100, 600, false);
 add_image_size( 'news_image_small', 100, 100, false);
 
-
 function mytheme_add_woocommerce_support() {
     add_theme_support( 'woocommerce', array(
         'product_grid' => array(
@@ -136,7 +135,7 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 function open_main(){
     echo '<main class="main">
     <div class="main__container">';
-    if(is_shop()){
+    if(is_shop() || is_product_category()){
         echo '<div class="main__catalog">';
         ?>
             <aside class="sidebar">
@@ -173,7 +172,7 @@ remove_action( 'woocommerce_before_shop_loop' , 'woocommerce_result_count', 20 )
 remove_action( 'woocommerce_after_shop_loop' , 'woocommerce_result_count', 20 );
 
 function woocommerce_output_content_wrapper() {
-    if(is_shop()){
+    if(is_shop() || is_product_category()){
         echo '<div class="main__content">
                 <div class="items">';
     }
@@ -182,7 +181,7 @@ add_action('woocommerce_before_main_content', 'woocommerce_output_content_wrappe
 
 
 function woocommerce_output_content_wrapper_end() {
-    if(is_shop()){
+    if(is_shop() || is_product_category()){
         echo '</div><
                 </div>';
     }

@@ -104,24 +104,54 @@
 
             <div class="header__icons-social">
                 <ul class="menu__social">
-                    <li><a href="https://ok.ru/domtorgovli" class="menu__link l1">
-                            <img src="<?php bloginfo('template_directory');?>/img/od.svg" alt="" class="menu_icons">
-                        </a></li>
-                    <li><a href="https://vk.com/dtraduga" class="menu__link l2">
+
+                <?php 
+                $link = get_field('одноклассники');
+                if( $link ): ?>
+                    <li><a href="<?php echo esc_url( $link ); ?>" class="menu__link l1">
+                        <img src="<?php bloginfo('template_directory');?>/img/od.svg" alt="" class="menu_icons">
+                    </a></li>
+                <?php endif; ?>
+
+                <?php 
+                $link = get_field('вконтакте');
+                if( $link ): ?>
+                    <li><a href="<?php echo esc_url( $link ); ?>" class="menu__link l2">
                             <img src="<?php bloginfo('template_directory');?>/img/vk.svg" alt="" class="menu_icons">
                         </a></li>
-                    <li><a href="https://www.instagram.com/dtraduga/" class="menu__link l3">
+                <?php endif; ?>
+
+                <?php 
+                $link = get_field('инстаграм');
+                if( $link ): ?>
+                    <li><a href="<?php echo esc_url( $link ); ?>" class="menu__link l3">
                             <img src="<?php bloginfo('template_directory');?>/img/inst.svg" alt="" class="menu_icons">
                         </a></li>
-                    <li><a href="https://t.me/dt_raduga" class="menu__link l4">
+                <?php endif; ?>
+
+                <?php 
+                $link = get_field('телеграм');
+                if( $link ): ?>
+                    <li><a href="<?php echo esc_url( $link ); ?>" class="menu__link l4">
                             <img src="<?php bloginfo('template_directory');?>/img/tel.svg" alt="" class="menu_icons">
                         </a></li>
-                    <li><a href="https://tinyurl.com/y2zw6c37" class="menu__link l5">
+                <?php endif; ?>
+
+                <?php 
+                $link = get_field('вайбер');
+                if( $link ): ?>
+                    <li><a href="<?php echo esc_url( $link ); ?>" class="menu__link l5">
                             <img src="<?php bloginfo('template_directory');?>/img/viber.svg" alt="" class="menu_icons">
                         </a></li>
-                    <li><a href="https://www.facebook.com/domtorgovliraduga" class="menu__link l6">
+                <?php endif; ?>
+
+                <?php 
+                $link = get_field('фейсбук');
+                if( $link ): ?>
+                    <li><a href="<?php echo esc_url( $link ); ?>" class="menu__link l6">
                         <img src="<?php bloginfo('template_directory');?>/img/facebook.svg" alt="">
                         </a></li>
+                <?php endif; ?>
                 </ul>
             </div>
         </div>
