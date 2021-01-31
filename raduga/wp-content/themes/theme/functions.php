@@ -142,6 +142,7 @@ function open_main(){
                 <?php
                     $cate = get_queried_object_id();
                     echo do_shortcode( '[woof taxonomies=product_cat:".$cate."]' );
+                    echo do_shortcode( '[wpf-filters id=1]' );
                 ?>
             </aside>
         <?php

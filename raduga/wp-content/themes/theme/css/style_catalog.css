@@ -518,8 +518,10 @@ a.button.product_type_simple.add_to_cart_button.ajax_add_to_cart {
 .woocommerce-Tabs-panel h2{
     color: #fff;
     margin-bottom: 10px;
-    font-size:18px;
+	font-size:18px;
+	font-style: bold;
 }
+
 /*---------MAIN-----------*/
 
 

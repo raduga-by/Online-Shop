@@ -1,0 +1,22 @@
+2021-01-31T21:17:23+00:00 CRITICAL Uncaught Error: Class "WP_Scripts" not found in C:\xampp\htdocs\raduga\wp-includes\functions.wp-scripts.php:24
+Stack trace:
+#0 C:\xampp\htdocs\raduga\wp-includes\functions.wp-scripts.php(176): wp_scripts()
+#1 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\widgets\class-wc-widget-price-filter.php(37): wp_register_script('accounting', 'http://localhos...', Array, '0.4.2', true)
+#2 C:\xampp\htdocs\raduga\wp-includes\class-wp-widget-factory.php(61): WC_Widget_Price_Filter->__construct()
+#3 C:\xampp\htdocs\raduga\wp-includes\widgets.php(115): WP_Widget_Factory->register('WC_Widget_Price...')
+#4 C:\xampp\htdocs\raduga\wp-content\plugins\woocommerce\includes\wc-widget-functions.php(39): register_widget('WC_Widget_Price...')
+#5 C:\xampp\htdocs\raduga\wp-includes\class-wp-hook.php(287): wc_register_widgets('')
+#6 C:\xampp\htdocs\raduga\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#7 C:\xampp\htdocs\raduga\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#8 C:\xampp\htdocs\raduga\wp-includes\widgets.php(1795): do_action('widgets_init')
+#9 C:\xampp\htdocs\raduga\wp-includes\class-wp-hook.php(287): wp_widgets_init('')
+#10 C:\xampp\htdocs\raduga\wp-includes\class-wp-hook.php(311): WP_Hook->apply_filters(NULL, Array)
+#11 C:\xampp\htdocs\raduga\wp-includes\plugin.php(484): WP_Hook->do_action(Array)
+#12 C:\xampp\htdocs\raduga\wp-settings.php(557): do_action('init')
+#13 C:\xampp\htdocs\raduga\wp-config.php(90): require_once('C:\\xampp\\htdocs...')
+#14 C:\xampp\htdocs\raduga\wp-load.php(37): require_once('C:\\xampp\\htdocs...')
+#15 C:\xampp\htdocs\raduga\wp-blog-header.php(13): require_once('C:\\xampp\\htdocs...')
+#16 C:\xampp\htdocs\raduga\index.php(17): require('C:\\xampp\\htdocs...')
+#17 {main}
+  thrown in C:\xampp\htdocs\raduga\wp-includes\functions.wp-scripts.php on line 24
+

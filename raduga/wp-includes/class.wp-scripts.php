@@ -489,7 +489,7 @@ class WP_Scripts extends WP_Dependencies {
 				continue;
 			}
 
-			$l10n[ $key ] = html_entity_decode( (string) $value, ENT_QUOTES, 'UTF-8' );
+			// $l10n[ $key ] = html_entity_decode( (string) $value, ENT_QUOTES, 'UTF-8' );
 		}
 
 		$script = "var $object_name = " . wp_json_encode( $l10n ) . ';';
